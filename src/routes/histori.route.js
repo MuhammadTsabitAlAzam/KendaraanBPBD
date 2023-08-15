@@ -8,8 +8,6 @@ const router = express.Router();
 
 router.get('/histori', getHistori);
 
-router.get('/download-pdf', downloadPDF);
-
 router.post('/histori', handleValidate(historiCreateScheme), createHistori);
 
 router.patch('/histori/:id', handleValidate(historiUpdateScheme), updateHistori);
